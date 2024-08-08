@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar items-end bg-base-100">
       <div className="avatar">
         <div className="w-24 rounded-xl">
           <Image

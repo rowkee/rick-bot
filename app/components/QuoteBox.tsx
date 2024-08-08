@@ -1,10 +1,15 @@
 import React from "react";
 
-const QuoteBox = () => {
+interface QuoteBoxProps {
+  rickPhrase: string;
+}
+
+const QuoteBox: React.FC<QuoteBoxProps> = ({ rickPhrase }) => {
   return (
     <textarea
       className="textarea textarea-bordered my-8"
-      placeholder="What will Rick say......"
+      placeholder={rickPhrase}
+      readOnly
     ></textarea>
   );
 };
